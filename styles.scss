@@ -89,21 +89,24 @@ main {
 
   p {
     text-align: center;
-    padding: 5vw 5vw;
+    padding: 8vw 5vw;
   }
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 33% 10px 33% 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-gap: 10px;
-  border: solid 2px green;
+  
   height: 40vh;
   text-align: center;
+  line-height: 6vh;
   padding: 5vw;
 
   i {
-    transform: scale(300%);
+    transform: scale(350%);
   }
+
 }
+
