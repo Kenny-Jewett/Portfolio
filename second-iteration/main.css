@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@600&family=Montserrat&display=swap");
 /* Box sizing rules */
 *,
 *::before,
@@ -79,10 +80,14 @@ footer {
 .main__navbar i {
   padding: 0.5rem;
 }
+.main__navbar i h3 {
+  font-family: "Hind", sans-serif;
+}
 
 .main__header {
   text-align: center;
   padding: 3rem 1rem;
+  font-family: "Hind", sans-serif;
 }
 .main__header h4 {
   padding: 0.1rem 2rem;
@@ -90,8 +95,10 @@ footer {
 .main__header h2 {
   padding: 3rem 2rem;
   font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
 }
 .main__header a {
+  font-family: "Hind", sans-serif;
   padding: 1rem 1rem;
   text-decoration: none;
   border-radius: 0.5rem;
@@ -107,6 +114,7 @@ footer {
 .main__technical-skills h2 {
   text-align: center;
   padding: 3rem;
+  font-family: "Montserrat", sans-serif;
 }
 .main__technical-skills .section__grid-container {
   display: grid;
@@ -130,7 +138,7 @@ footer {
 .main__projects-container .projects__header {
   text-align: center;
   font-size: 2rem;
-  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
 }
 .main__projects-container .projects-grid {
   display: grid;
@@ -146,6 +154,7 @@ footer {
   object-fit: cover;
 }
 .main__projects-container .projects-grid .card .card__content {
+  font-family: "Hind", sans-serif;
   background: white;
   align-self: end;
   margin: 0.3rem 0.3rem 1.5rem;
@@ -155,12 +164,15 @@ footer {
 .main__projects-container .projects-grid .card .card__content .card__title {
   text-align: center;
   padding: 0.5rem;
+  font-family: "Montserrat", sans-serif;
 }
 .main__projects-container .projects-grid .card .card__content card__description {
   padding: 0.3rem;
 }
 .main__projects-container .projects-grid .card .card__content .card__code,
 .main__projects-container .projects-grid .card .card__content .card__preview {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
   padding: 0.2rem;
   object-fit: contain;
   border: solid 2px black;
@@ -185,6 +197,7 @@ footer {
 .main__about-me h2 {
   text-align: center;
   padding: 2rem;
+  font-family: "Montserrat", sans-serif;
 }
 .main__about-me img {
   display: flex;

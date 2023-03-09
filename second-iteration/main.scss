@@ -1,4 +1,8 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@600&family=Montserrat&display=swap');
+
+$font-content: "Hind", sans-serif;
+$font-header: "Montserrat", sans-serif;
 
 
 /* Box sizing rules */
@@ -89,12 +93,16 @@ footer {
     i {
         padding: .5rem;
 
-    }
+        h3 {
+            font-family: $font-content;
+        }
+    } 
 }   
 
 .main__header {
     text-align: center;
     padding: 3rem 1rem;
+    font-family: $font-content;
 
     h4 {
         padding: .1rem 2rem;
@@ -103,10 +111,11 @@ footer {
     h2 {
         padding: 3rem 2rem;
         font-size: 3rem;
+        font-family: $font-header;
     }
 
     a {
-        
+        font-family: $font-content;
         padding: 1rem 1rem;
         text-decoration: none;
         border-radius: .5rem;
@@ -123,6 +132,7 @@ footer {
     h2 {
         text-align: center;
         padding: 3rem;
+        font-family: $font-header;
     }
 
     .section__grid-container {
@@ -151,7 +161,7 @@ footer {
     .projects__header {
         text-align: center;
         font-size: 2rem;
-        font-weight: bold;
+        font-family: $font-header;
     }
 
     .projects-grid {
@@ -166,15 +176,14 @@ footer {
         .card {
             aspect-ratio: 1 / 1.5;
             
-
             .card__image {
                 width: 100%;
                 aspect-ratio: 1 / 1;
                 object-fit: cover;
-
             }
 
             .card__content {
+                font-family: $font-content;
                 background: white;
                 align-self: end;
                 margin: .3rem .3rem 1.5rem;
@@ -186,6 +195,7 @@ footer {
                 .card__title {
                     text-align: center;
                     padding: .5rem;
+                    font-family: $font-header;
 
                 }
 
@@ -196,6 +206,8 @@ footer {
 
                 .card__code, 
                 .card__preview {
+                    font-family: $font-header;
+                    text-decoration: none;
                     padding: .2rem;
                     object-fit: contain;
                     border: solid 2px black;
@@ -230,6 +242,8 @@ footer {
     h2 {
         text-align: center;
         padding: 2rem;
+        font-family: $font-header;
+        
     }
 
     img {
