@@ -38,7 +38,7 @@ picture {
 .body__grid-container {
   display: grid;
   grid-template-areas: "nav nav nav nav" "header header header header" "section section section section" "aside aside aside aside" "article article article article" "footer footer footer footer";
-  grip-gap: 5px;
+  grid-gap: 5px;
 }
 
 nav {
@@ -128,7 +128,7 @@ footer {
 }
 .main__projects-container .projects__header {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 .main__projects-container .projects-grid {
@@ -186,12 +186,13 @@ footer {
   padding: 2rem;
 }
 .main__about-me img {
+  display: flex;
   border: 1px transparent black;
   border-radius: 10rem;
   box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);
 }
 .main__about-me p {
-  padding: 3rem;
+  padding: 2rem;
 }
 
 .main__footer-container {

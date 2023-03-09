@@ -47,7 +47,7 @@ picture {
         "aside aside aside aside"
         "article article article article"
         "footer footer footer footer";
-    grip-gap: 5px;
+    grid-gap: 5px;
 }
 
 nav {
@@ -149,7 +149,7 @@ footer {
 
     .projects__header {
         text-align: center;
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: bold;
     }
 
@@ -225,20 +225,21 @@ footer {
 
 .main__about-me {
     padding: 2rem;
-
+    
     h2 {
         text-align: center;
         padding: 2rem;
     }
 
-    img {        
+    img {
+        display: flex;   
         border: 1px transparent black;
         border-radius: 10rem;      
         box-shadow: 0 .25rem 1rem rgb(0 0 0 / .1);
     }
 
     p {
-        padding: 3rem;
+        padding: 2rem;
     }
     
 }
