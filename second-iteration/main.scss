@@ -1,0 +1,94 @@
+
+
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; 
+  font-size: 1.25rem; 
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+.body__grid-container {
+    display: grid;
+    grid-template-areas: 
+        "nav nav nav nav"
+        "header header header header"
+        "section section section section"
+        "aside aside aside aside"
+        "article article article article"
+        "footer footer footer footer";
+    grip-gap: 5px;
+}
+
+nav {
+    grid-area: nav;
+    border: solid 2px black;
+}
+
+header {
+    grid-area: header;
+    border: solid 2px black;
+}
+
+section {
+    grid-area: section;
+    border: solid 2px black;
+}
+
+aside {
+    grid-area: aside;
+    border: solid 2px black;
+}
+
+article {
+    grid-area: article;
+    border: solid 2px black;
+}
+
+footer {
+    grid-area: footer;
+    border: solid 2px black;
+}
+
+
+.main__navbar {
+    display: flex;
+    padding: .5rem;
+    align-items: center;
+
+    i {
+        padding: .5rem;
+
+    }
+}   
+
