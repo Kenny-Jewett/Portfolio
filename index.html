@@ -1,101 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/0003fdc518.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="styles.css">
-  <title>Kenny Jewett Portfolio</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://kit.fontawesome.com/0003fdc518.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>Kenny Jewett Portfolio</title>
 </head>
-
 <body>
-  <header>
-    <nav>
-      <div>
-        <div>
-          <i class="fa-solid fa-code"></i>
-          <h3>Kenny Jewett</h3>
-        </div>
-        <div>
-          <i class="fa-light fa-bars-sort"></i>  
-        </div>
-      </div>
-    </nav>
-    <h4>Hey! I'm Kenny Jewett</h4>
-    <h1>A Junior Software Developer based in the US.</h1>
-    <div class="jump-button">
-      <button>Take a look at my work <i class="fa-solid fa-arrow-turn-down"></i></button>
-    </div>
-  </header>
-  <main>
-    <h2>Technical Skills</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita illum sequi autem, distinctio natus ad dolorum
-      reprehenderit. Cupiditate quaerat in alias nulla dicta a praesentium, nesciunt neque libero? Aliquam,
-      necessitatibus?
-    </p>
-    <div class="grid-container">
-      <div class="logo-card">
-        <i class="fa-brands fa-js" class="logo"></i>
-        <h4>Javascipt</h4>
-      </div>
-      <div class="logo-card">
-        <i class="fa-brands fa-html5" class="logo"></i>
-        <h4>HTML5</h4>
-      </div>
-      <div class="logo-card">  
-        <i class="fa-brands fa-css3-alt" class="logo"></i>
-        <h4>CSS3</h4>
-      </div>
-      <div class="logo-card">  
-        <i class="fa-brands fa-sass" class="logo"></i>
-        <h4>SCSS</h4>
-      </div>
-      <div class="logo-card">  
-        <i class="fa-brands fa-react" class="logo"></i>
-        <h4>React</h4>
-      </div>
-      <div class="logo-card">
-        <i class="fa-brands fa-git-alt" class="logo"></i>
-        <h4>git</h4>
-      </div>
-    </div>
-    <h2>My Projects</h2>
-    <div>
-      <div>
-        <img src="./—Pngtree—gray network placeholder_6398266.png" alt="">
-        <h2>Client Project</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Nobis vitae doloremque dolore pariatur, unde similique cupiditate 
-          iure tempora odit dolor, eligendi quasi hic quo quis, nesciunt facilis 
-          expedita fugiat error.
-        </p>
-        <a href="">Code <i class="fa-solid fa-code"></i></a>
-        <a href="">Preview <i class="fa-sharp fa-regular fa-eye"></i></a>
-      </div>
-    </div>
-    <article>
-      <h2>About me</h2>
-      <img src="./Profile picture.jpg" alt="">
+	<main class="body__grid-container">
+		<nav class="main__navbar">
+			<i class="fa-solid fa-code"></i>
+      	<h3>Kenny Jewett</h3>
+		</nav>
+		<header class="main__header">
+			<h4>Hey! I'm Kenny Jewett</h4>
+    	<h2>A Junior Software Developer based in the US.</h2>
+			<a href="">Take a look at my work <i class="fa-solid fa-arrow-turn-down"></i></a>
+		</header>
+		<section class="main__technical-skills">
+			<h2>Technical Skills</h2>			
+			<div class="section__grid-container">
+				<div class="logo-card">
+					<i class="fa-brands fa-js" class="logo"></i>
+					<h4>Javascipt</h4>
+				</div>
+				<div class="logo-card">
+					<i class="fa-brands fa-html5" class="logo"></i>
+					<h4>HTML5</h4>
+				</div>
+				<div class="logo-card">  
+					<i class="fa-brands fa-css3-alt" class="logo"></i>
+					<h4>CSS3</h4>
+				</div>
+				<div class="logo-card">  
+					<i class="fa-brands fa-sass" class="logo"></i>
+					<h4>SCSS</h4>
+				</div>
+				<div class="logo-card">  
+					<i class="fa-brands fa-react" class="logo"></i>
+					<h4>React</h4>
+				</div>
+				<div class="logo-card">
+					<i class="fa-brands fa-git-alt" class="logo"></i>
+					<h4>git</h4>
+				</div>
+			</div>
+		</section>
+		<aside class="main__projects-container">
+			<h2 class="projects__header">Projects</h2>
+			<div class="projects-grid">
+				<div class="card stacked">
+					<img src="./ali-dadras-jzIZe9WFGU4-unsplash.jpg" alt="" class="card__image">
+					<div class="card__content">
+						<h2 class="card__title">Client Project</h2>
+						<p class="card__description">Lorem ipsum dolor sit amet consectetur.</p>
+						<a href="" class="card__code">Code <i class="fa-solid fa-code"></i></a>
+						<a href="" class="card__preview">Preview <i class="fa-sharp fa-regular fa-eye"></i></a>
+					</div>
+				</div>
+				<div class="card stacked">
+					<img src="./amirhossein-soltani-EGR01iyPByQ-unsplash.jpg" alt="" class="card__image">
+					<div class="card__content">
+						<h2 class="card__title">Client Project</h2>
+						<p class="card__description">Lorem ipsum dolor sit amet consectetur.</p>
+						<a href="" class="card__code">Code <i class="fa-solid fa-code"></i></a>
+						<a href="" class="card__preview">Preview <i class="fa-sharp fa-regular fa-eye"></i></a>
+					</div>
+				</div>
+				<div class="card stacked">
+					<img src="./jorgen-hendriksen-Kvq0P8m6njs-unsplash.jpg" alt="" class="card__image">
+					<div class="card__content">
+						<h2 class="card__title">Client Project</h2>
+						<p class="card__description">Lorem ipsum dolor sit amet consectetur.</p>
+						<a href="" class="card__code">Code <i class="fa-solid fa-code"></i></a>
+						<a href="" class="card__preview">Preview <i class="fa-sharp fa-regular fa-eye"></i></a>
+					</div>
+				</div>
+				<div class="card stacked">
+					<img src="./nubelson-fernandes-2hclXjz4NDU-unsplash.jpg" alt="" class="card__image">
+					<div class="card__content">
+						<h2 class="card__title">Client Project</h2>
+						<p class="card__description">Lorem ipsum dolor sit amet consectetur.</p>
+						<a href="" class="card__code">Code <i class="fa-solid fa-code"></i></a>
+						<a href="" class="card__preview">Preview <i class="fa-sharp fa-regular fa-eye"></i></a>
+					</div>
+				</div>
+				<div class="card stacked">
+					<img src="./nubelson-fernandes-wajLZRUWwtY-unsplash.jpg" alt="" class="card__image">
+					<div class="card__content">
+						<h2 class="card__title">Client Project</h2>
+						<p class="card__description">Lorem ipsum dolor sit amet consectetur.</p>
+						<a href="" class="card__code">Code <i class="fa-solid fa-code"></i></a>
+						<a href="" class="card__preview">Preview <i class="fa-sharp fa-regular fa-eye"></i></a>
+					</div>
+				</div>
+				<div class="card stacked">
+					<img src="./reid-zura-eZU93woHT6c-unsplash.jpg" alt="" class="card__image">
+					<div class="card__content">
+						<h2 class="card__title">Client Project</h2>
+						<p class="card__description">Lorem ipsum dolor sit amet consectetur.</p>
+						<a href="" class="card__code">Code <i class="fa-solid fa-code"></i></a>
+						<a href="" class="card__preview">Preview <i class="fa-sharp fa-regular fa-eye"></i></a>
+					</div>
+				</div>
+				<div class="card stacked">
+					<img src="./dillon-kydd-p0H89UzL2EI-unsplash.jpg" alt="" class="card__image">
+					<div class="card__content">
+						<h2 class="card__title">Client Project</h2>
+						<p class="card__description">Lorem ipsum dolor sit amet consectetur.</p>
+						<a href="" class="card__code">Code <i class="fa-solid fa-code"></i></a>
+						<a href="" class="card__preview">Preview <i class="fa-sharp fa-regular fa-eye"></i></a>
+					</div>
+				</div>
+				<div class="card stacked">
+					<img src="./precious-madubuike-aOM3i7-e6V8-unsplash.jpg" alt="" class="card__image">
+					<div class="card__content">
+						<h2 class="card__title">Client Project</h2>
+						<p class="card__description">Lorem ipsum dolor sit amet consectetur.</p>
+						<a href="" class="card__code">Code <i class="fa-solid fa-code"></i></a>
+						<a href="" class="card__preview">Preview <i class="fa-sharp fa-regular fa-eye"></i></a>
+					</div>
+				</div>
+			</div>
+		</aside>
+		<article class="main__about-me">
+			<h2>About me</h2>
+			<div class="img__container">
+      	<img src="./Profile picture.jpg" alt="">
+			</div>	
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non odit cumque voluptatum. Dicta alias numquam error,
         ut deleniti delectus officiis sunt, necessitatibus voluptas dolorum debitis sint amet sed est ipsum.
       </p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium est quidem accusantium, reiciendis, aut
-        sequi beatae rem laborum unde nam corporis earum officiis et. Corrupti ullam nostrum at aspernatur eos!
-      </p>
-    </article>
-  
-  </main>
-  <footer>
-    <div>
-      <div>
-        <a href="https://github.com/Kenny-Jewett"><i class="fa-brands fa-github"></i></a>
-        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>        
-      </div>
-      <a href="">kennethrjewett@gmail.com</a>
-    </div>
-  </footer>
+		</article>
+		<footer class="main__footer-container">
+			<div>
+				<div class="footer__links">
+					<a href="https://github.com/Kenny-Jewett"><i class="fa-brands fa-github"></i></a>
+					<a href=""><i class="fa-brands fa-linkedin-in"></i></a>        
+				</div>
+				<a href="">kennethrjewett@gmail.com</a>
+			</div>
+		</footer>
+	</main>	
 </body>
-
 </html>
