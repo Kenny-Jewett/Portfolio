@@ -73,6 +73,10 @@ footer {
   color: #F2E9E4;
   background-color: #4A4E69;
 }
+.main__navbar .navbar__name {
+  display: flex;
+  align-items: center;
+}
 .main__navbar i {
   padding: 0.5rem;
 }
@@ -81,11 +85,11 @@ footer {
 }
 .main__navbar .navbar__links {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 5px;
   height: 100%;
   width: 50%;
-  align-items: center;
 }
 .main__navbar .navbar__links a {
   text-decoration: none;

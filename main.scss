@@ -96,6 +96,11 @@ footer {
     align-items: center;
     color: $color-lightest;
     background-color: $color-dark;
+
+    .navbar__name {
+        display: flex;
+        align-items: center;
+    }
     
 
     i {
@@ -108,12 +113,11 @@ footer {
     
     .navbar__links {
         display: flex;
-        justify-content: space-around;
-        
+        justify-content: space-between;
+        align-items: center;        
         padding-top: 5px;
         height: 100%;
         width: 50%;
-        align-items: center;
 
         a {
             text-decoration: none;
