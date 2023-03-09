@@ -70,7 +70,7 @@ footer {
 }
 .main__navbar .navbar__links {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding-top: 5px;
   height: 100%;
