@@ -170,31 +170,38 @@ footer {
             .card__content {
                 background: white;
                 align-self: end;
-                margin: .5rem .5rem 2rem;
-                padding: .5rem;
+                //margin: .5rem .5rem 2rem;
+                padding: .2rem;
                 // box shadow params are horzontal/verticle/blur/color
                 // (new syntax, but is transparent black)
                 box-shadow: 0 .25rem 1rem rgb(0 0 0 / .1);
 
                 .card__title {
-
+                    text-align: center;
+                    padding: .5rem;
 
                 }
 
                 card__description {
-
-
-                }
-
-                .card__code {
+                    padding: .3rem;
                     
-
                 }
 
+                .card__code, 
                 .card__preview {
-
-
+                    padding: .2rem;
+                    object-fit: contain;
+                    border: solid 2px black;
+                    border-radius: .2rem;
+                    background-color: black;
+                    color: white;
+                    box-shadow: 0 .25rem 1rem rgb(0 0 0 / .1);                    
                 }
+
+                
+
+
+                
             }
         }
     }

@@ -142,10 +142,27 @@ footer {
 .main__projects-container .projects-grid .card .card__content {
   background: white;
   align-self: end;
-  margin: 0.5rem 0.5rem 2rem;
-  padding: 0.5rem;
+  padding: 0.2rem;
   box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);
 }
+.main__projects-container .projects-grid .card .card__content .card__title {
+  text-align: center;
+  padding: 0.5rem;
+}
+.main__projects-container .projects-grid .card .card__content card__description {
+  padding: 0.3rem;
+}
+.main__projects-container .projects-grid .card .card__content .card__code,
+.main__projects-container .projects-grid .card .card__content .card__preview {
+  padding: 0.2rem;
+  object-fit: contain;
+  border: solid 2px black;
+  border-radius: 0.2rem;
+  background-color: black;
+  color: white;
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);
+}
+
 .stacked {
   display: grid;
 }
