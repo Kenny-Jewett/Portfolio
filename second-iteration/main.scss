@@ -92,3 +92,116 @@ footer {
     }
 }   
 
+.main__header {
+    text-align: center;
+    padding: .9rem;
+
+    h4 {
+        padding: 4rem 2rem;
+    }
+
+    h2 {
+        padding: 1rem 2rem;
+        font-size: 2rem;
+    }
+
+    a {
+        
+        padding: 1rem 1rem;
+        text-decoration: none;
+        border-radius: .25rem;
+        border: transparent 2px black;
+        background-color: black;
+        color: white;
+    }
+}
+
+.main__technical-skills {
+    padding: 1rem;
+
+    h2 {
+        text-align: center;
+        padding: 3rem;
+    }
+
+    .section__grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 1.25rem;  
+        height: 40vh;
+        text-align: center;
+        line-height: 9vh;
+        padding: 5vw;
+      
+        i {
+          transform: scale(350%);
+          
+        }
+      
+      }
+}
+
+.main__projects-container {
+    max-width: 100rem;
+    margin-inline: auto;
+    padding-inline: 2rem;
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: .25rem;
+
+        .card {
+            aspect-ratio: 1 / 1.5;
+            
+
+            .card__image {
+                width: 100%;
+                aspect-ratio: 1 / 1;
+                object-fit: cover;
+
+            }
+
+            .card__content {
+                background: white;
+                align-self: end;
+                margin: .5rem .5rem 2rem;
+                padding: .5rem;
+                // box shadow params are horzontal/verticle/blur/color
+                // (new syntax, but is transparent black)
+                box-shadow: 0 .25rem 1rem rgb(0 0 0 / .1);
+
+                .card__title {
+
+
+                }
+
+                card__description {
+
+
+                }
+
+                .card__code {
+                    
+
+                }
+
+                .card__preview {
+
+
+                }
+            }
+        }
+    }
+}
+
+// utility class for projects container
+.stacked {
+    display: grid;
+}
+// this puts the elements on top of the picture
+.stacked > * {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}

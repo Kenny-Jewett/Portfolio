@@ -79,3 +79,78 @@ footer {
 .main__navbar i {
   padding: 0.5rem;
 }
+
+.main__header {
+  text-align: center;
+  padding: 0.9rem;
+}
+.main__header h4 {
+  padding: 4rem 2rem;
+}
+.main__header h2 {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+}
+.main__header a {
+  padding: 1rem 1rem;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  border: transparent 2px black;
+  background-color: black;
+  color: white;
+}
+
+.main__technical-skills {
+  padding: 1rem;
+}
+.main__technical-skills h2 {
+  text-align: center;
+  padding: 3rem;
+}
+.main__technical-skills .section__grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1.25rem;
+  height: 40vh;
+  text-align: center;
+  line-height: 9vh;
+  padding: 5vw;
+}
+.main__technical-skills .section__grid-container i {
+  transform: scale(350%);
+}
+
+.main__projects-container {
+  max-width: 100rem;
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+.main__projects-container .projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.25rem;
+}
+.main__projects-container .projects-grid .card {
+  aspect-ratio: 1/1.5;
+}
+.main__projects-container .projects-grid .card .card__image {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.main__projects-container .projects-grid .card .card__content {
+  background: white;
+  align-self: end;
+  margin: 0.5rem 0.5rem 2rem;
+  padding: 0.5rem;
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);
+}
+.stacked {
+  display: grid;
+}
+
+.stacked > * {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
