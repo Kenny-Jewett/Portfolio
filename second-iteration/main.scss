@@ -1,6 +1,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@600&family=Montserrat&display=swap');
 
+$color-darkest: #22223B;
+$color-dark: #4A4E69;
+$color-medium: #9A8C98;
+$color-light: #C9ADA7;
+$color-lightest: #F2E9E4;
+
+
+
+
 $font-content: "Hind", sans-serif;
 $font-header: "Montserrat", sans-serif;
 
@@ -51,37 +60,32 @@ picture {
         "aside aside aside aside"
         "article article article article"
         "footer footer footer footer";
-    grid-gap: 5px;
+    // grid-gap: 5px;
 }
 
 nav {
     grid-area: nav;
-    border: solid 2px black;
+        
 }
 
 header {
-    grid-area: header;
-    border: solid 2px black;
+    grid-area: header;    
 }
 
 section {
-    grid-area: section;
-    border: solid 2px black;
+    grid-area: section;    
 }
 
 aside {
-    grid-area: aside;
-    border: solid 2px black;
+    grid-area: aside;    
 }
 
 article {
-    grid-area: article;
-    border: solid 2px green;
+    grid-area: article;    
 }
 
 footer {
-    grid-area: footer;
-    border: solid 2px black;
+    grid-area: footer;    
 }
 
 
@@ -89,10 +93,13 @@ footer {
     display: flex;
     padding: .5rem;
     align-items: center;
+    color: $color-lightest;
+    background-color: $color-medium;
+    
 
     i {
         padding: .5rem;
-
+        
         h3 {
             font-family: $font-content;
         }
@@ -100,6 +107,8 @@ footer {
 }   
 
 .main__header {
+    background-color: #22223B;
+    color: $color-lightest;
     text-align: center;
     padding: 3rem 1rem;
     font-family: $font-content;
@@ -115,19 +124,22 @@ footer {
     }
 
     a {
+        
         font-family: $font-content;
         padding: 1rem 1rem;
         text-decoration: none;
         border-radius: .5rem;
         border: transparent 2px black;
-        background-color: black;
-        color: white;
+        background-color: $color-medium;
+        color: $color-lightest;
         box-shadow: 0 .5rem 1rem rgb(0 0 0 / .1);
     }
 }
 
 .main__technical-skills {
     padding: 1rem;
+    background-color: $color-darkest;
+    color: $color-lightest;
 
     h2 {
         text-align: center;
@@ -154,6 +166,8 @@ footer {
 }
 
 .main__projects-container {
+    background-color: $color-darkest;
+    color: $color-lightest;
     max-width: 100rem;
     margin-inline: auto;
     padding-inline: 2rem;
@@ -162,6 +176,7 @@ footer {
         text-align: center;
         font-size: 2rem;
         font-family: $font-header;
+        padding-top: 2rem;
     }
 
     .projects-grid {
@@ -184,10 +199,11 @@ footer {
 
             .card__content {
                 font-family: $font-content;
-                background: white;
+                background: $color-dark;
                 align-self: end;
                 margin: .3rem .3rem 1.5rem;
                 padding: .2rem;
+                border: $color-light solid 3px;
                 // box shadow params are horzontal/verticle/blur/color
                 // (new syntax, but is transparent black)
                 box-shadow: 0 .25rem 1rem rgb(0 0 0 / .1);
@@ -210,10 +226,10 @@ footer {
                     text-decoration: none;
                     padding: .2rem;
                     object-fit: contain;
-                    border: solid 2px black;
+                    border: solid 2px $color-light;
                     border-radius: .2rem;
-                    background-color: black;
-                    color: white;
+                    background-color: $color-darkest;
+                    color: $color-lightest;
                     box-shadow: 0 .25rem 1rem rgb(0 0 0 / .1);                    
                 }
 
@@ -238,6 +254,8 @@ footer {
 
 .main__about-me {
     padding: 2rem;
+    background-color: $color-darkest;
+    color: $color-lightest;
     
     h2 {
         text-align: center;
@@ -246,11 +264,20 @@ footer {
         
     }
 
-    img {
-        display: flex;   
-        border: 1px transparent black;
-        border-radius: 10rem;      
-        box-shadow: 0 .25rem 1rem rgb(0 0 0 / .1);
+    .img__container {
+        display: flex;
+        justify-content: center;
+
+        img {
+            align-self: center;
+            max-width: 20rem;       
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border: 5px solid $color-light;
+            border-radius: 10rem;      
+            box-shadow: 0 .25rem 1rem rgb(0 0 0 / .1);
+        }
+    
     }
 
     p {
@@ -261,7 +288,8 @@ footer {
 
 .main__footer-container {
     padding: 2rem;
-    background-color: black;
+    background-color: $color-dark;
+    
     
     div {
         align-items: center;
@@ -278,7 +306,7 @@ footer {
         }
 
         a {
-            color: white;
+            color: $color-lightest;
             text-decoration: none;
             font-size: 1.5rem;
             padding: .2rem;
