@@ -97,8 +97,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-gap: 10px;
-  
+  grid-gap: 10px;  
   height: 40vh;
   text-align: center;
   line-height: 6vh;
@@ -109,4 +108,6 @@ main {
   }
 
 }
+
+
 
