@@ -92,9 +92,10 @@ footer {
 .main__navbar {
     display: flex;
     padding: .5rem;
+    justify-content: space-between;
     align-items: center;
     color: $color-lightest;
-    background-color: $color-medium;
+    background-color: $color-dark;
     
 
     i {
@@ -103,7 +104,24 @@ footer {
         h3 {
             font-family: $font-content;
         }
-    } 
+    }
+    
+    .navbar__links {
+        display: flex;
+        justify-content: space-around;
+        
+        padding-top: 5px;
+        height: 100%;
+        width: 50%;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+            color: $color-lightest;
+            font-family: $font-content;
+
+        }
+    }
 }   
 
 .main__header {
@@ -132,7 +150,7 @@ footer {
         border: transparent 2px black;
         background-color: $color-medium;
         color: $color-lightest;
-        box-shadow: 0 .5rem 1rem rgb(0 0 0 / .1);
+        box-shadow: 0 .5rem 1rem rgb(0 0 0 / .5);
     }
 }
 
@@ -203,10 +221,10 @@ footer {
                 align-self: end;
                 margin: .3rem .3rem 1.5rem;
                 padding: .2rem;
-                border: $color-light solid 3px;
+                border: $color-light solid 1px;
                 // box shadow params are horzontal/verticle/blur/color
                 // (new syntax, but is transparent black)
-                box-shadow: 0 .25rem 1rem rgb(0 0 0 / .1);
+                box-shadow: 0 .25rem 1rem rgb(0 0 0 / .5);
 
                 .card__title {
                     text-align: center;
@@ -223,14 +241,15 @@ footer {
                 .card__code, 
                 .card__preview {
                     font-family: $font-header;
+                    font-size: 1.1rem;
                     text-decoration: none;
                     padding: .2rem;
-                    object-fit: contain;
+                    object-fit: contain;                   
                     border: solid 2px $color-light;
                     border-radius: .2rem;
                     background-color: $color-darkest;
                     color: $color-lightest;
-                    box-shadow: 0 .25rem 1rem rgb(0 0 0 / .1);                    
+                    box-shadow: 0 .25rem 1rem rgb(0 0 0 / .5);                    
                 }
 
                 

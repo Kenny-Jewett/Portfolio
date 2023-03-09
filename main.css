@@ -68,14 +68,28 @@ footer {
 .main__navbar {
   display: flex;
   padding: 0.5rem;
+  justify-content: space-between;
   align-items: center;
   color: #F2E9E4;
-  background-color: #9A8C98;
+  background-color: #4A4E69;
 }
 .main__navbar i {
   padding: 0.5rem;
 }
 .main__navbar i h3 {
+  font-family: "Hind", sans-serif;
+}
+.main__navbar .navbar__links {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5px;
+  height: 100%;
+  width: 50%;
+  align-items: center;
+}
+.main__navbar .navbar__links a {
+  text-decoration: none;
+  color: #F2E9E4;
   font-family: "Hind", sans-serif;
 }
 
@@ -102,7 +116,7 @@ footer {
   border: transparent 2px black;
   background-color: #9A8C98;
   color: #F2E9E4;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
 }
 
 .main__technical-skills {
@@ -161,8 +175,8 @@ footer {
   align-self: end;
   margin: 0.3rem 0.3rem 1.5rem;
   padding: 0.2rem;
-  border: #C9ADA7 solid 3px;
-  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  border: #C9ADA7 solid 1px;
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.5);
 }
 .main__projects-container .projects-grid .card .card__content .card__title {
   text-align: center;
@@ -175,6 +189,7 @@ footer {
 .main__projects-container .projects-grid .card .card__content .card__code,
 .main__projects-container .projects-grid .card .card__content .card__preview {
   font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
   text-decoration: none;
   padding: 0.2rem;
   object-fit: contain;
@@ -182,7 +197,7 @@ footer {
   border-radius: 0.2rem;
   background-color: #22223B;
   color: #F2E9E4;
-  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.5);
 }
 
 .stacked {
