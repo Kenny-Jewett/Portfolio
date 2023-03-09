@@ -149,8 +149,12 @@ footer {
 
     .projects-grid {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
         gap: .25rem;
+        // repeat(auto-fit, ) takes the size input and
+        // automatically adjusts the grid layout.
+        // use auto-fit over auto-fill if possible
+        grid-template-columns: 
+            repeat(auto-fit, minmax(13rem, 1fr));
 
         .card {
             aspect-ratio: 1 / 1.5;

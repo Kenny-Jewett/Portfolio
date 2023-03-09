@@ -128,8 +128,8 @@ footer {
 }
 .main__projects-container .projects-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
   gap: 0.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
 }
 .main__projects-container .projects-grid .card {
   aspect-ratio: 1/1.5;
