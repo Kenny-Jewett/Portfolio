@@ -28,7 +28,7 @@ picture {
 .main__container {
     height: 100%;
     width: 100%;
-    border: solid 2px pink;
+    border: solid 2px red;
     display: grid;
     align-content: center;
     justify-content: center;
@@ -38,5 +38,43 @@ picture {
     border: solid 2px white;
     width: 50dvh;
     height: 75dvh;
-    align-items: center;
+    display: grid;
+    grid-template-areas:
+        "screen screen screen screen"
+        "buttons buttons buttons buttons"
+        "buttons buttons buttons buttons"
+        "buttons buttons buttons buttons"
+        "buttons buttons buttons buttons"
+        "buttons buttons buttons buttons"    
+    ;
+    grid-gap: .5rem;
+
+}
+
+.container__screen {
+    grid-area: screen;
+    border: solid 2px skyblue;
+    
+}
+
+.screen {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+}
+
+.container__buttons {
+    grid-area: buttons;
+    border: solid 2px hotpink;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+}
+
+.button__cards {
+    border: solid 2px magenta;
+    display: grid;
+    
 }
