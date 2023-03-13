@@ -63,3 +63,6 @@ picture {
   border: solid 2px magenta;
   display: grid;
 }
+.button__cards i {
+  color: white;
+}
