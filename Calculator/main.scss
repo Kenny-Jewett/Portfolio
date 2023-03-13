@@ -1,0 +1,42 @@
+
+// 5x6 layout
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; 
+  font-size: 1.25rem; 
+  margin: 0;
+}
+
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  background-color: black;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+.main__container {
+    height: 100%;
+    width: 100%;
+    border: solid 2px pink;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.body__container {
+    border: solid 2px white;
+    width: 50dvh;
+    height: 75dvh;
+    align-items: center;
+}
