@@ -36,11 +36,12 @@ picture {
 }
 
 .body__container {
+   
     padding: 1rem;
     border: solid 2px white;
-    width: 50dvh;
+    width: 50vh;
     min-height: 75vh;
-    contain: content;
+   
     display: grid;
     grid-template-areas:
         "screen"
@@ -67,8 +68,8 @@ picture {
 
 .container__buttons {
     grid-area: buttons;
-    padding: .3rem;
-    min-height: 75vh;
+    padding: .5rem;
+    min-height: 70vh;
     align-self: end;
     border: solid 2px hotpink;
     display: grid;
