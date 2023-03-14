@@ -11,7 +11,7 @@
 body {
   min-height: 100vh;
   line-height: 1.5;
-  background: linear-gradient(#000814, #003566);
+  background: linear-gradient(0.6turn, #000814, #001D3D);
 }
 
 /* Make images easier to work with */
@@ -71,7 +71,7 @@ picture {
 }
 
 .button__cards {
-  border: solid 2px #001D3D;
+  border: solid 2px #000814;
   background-color: #001D3D;
   min-height: 80%;
   display: grid;

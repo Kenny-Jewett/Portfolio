@@ -22,7 +22,7 @@ $color-lightest: #FFD60A;
 body {
   min-height: 100vh;
   line-height: 1.5;
-  background: linear-gradient($color-darkest, $color-medium)
+  background: linear-gradient(.6turn, $color-darkest, $color-dark)
 }
 
 /* Make images easier to work with */
@@ -90,7 +90,7 @@ picture {
 
 
 .button__cards {
-    border: solid 2px $color-dark;
+    border: solid 2px $color-darkest;
     background-color: $color-dark;
     min-height: 80%;
     display: grid;
