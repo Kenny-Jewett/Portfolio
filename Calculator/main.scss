@@ -25,59 +25,50 @@ picture {
   display: block;
 }
 
-.main__container {
-    height: 100%;
-    width: 100%;
+.main__container {   
+    padding: 2rem 1rem;
     border: solid 2px red;
     display: grid;
     align-content: center;
     justify-content: center;
+    
 }
 
 .body__container {
+    padding: 1rem;
     border: solid 2px white;
     width: 50dvh;
-    height: 75dvh;
+    contain: content;
     display: grid;
     grid-template-areas:
-        "screen screen screen screen"
-        "buttons buttons buttons buttons"
-        "buttons buttons buttons buttons"
-        "buttons buttons buttons buttons"
-        "buttons buttons buttons buttons"
-        "buttons buttons buttons buttons"    
-    ;
+        "screen"
+        "buttons";
     grid-gap: .5rem;
 
 }
 
-.container__screen {
+.container__screen {   
+    padding: .3rem;
     grid-area: screen;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
-    border: solid 2px skyblue;
-    height: 100%;
-    
+    border: solid 2px skyblue;        
 }
 
-.screen {
+.screen {    
     width: 100%;
-    height: 100%;
     background-color: black;
-    color: white;
+    color: white;  
+    text-align: right;    
 }
 
 .container__buttons {
     grid-area: buttons;
 
-    height: 100%;
+    min-height: 75%;
     align-self: end;
     border: solid 2px hotpink;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-auto-flow: column;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;    
     grid-gap: .3rem;
     align-items: center;
 
@@ -90,11 +81,20 @@ picture {
     align-items: center;
     border-radius: 100%;
     aspect-ratio: 1 / 1;
-    
-    
-    
+        
     i {
         transform: scale(150%);
         color: white;
     }
 }
+
+
+
+
+
+
+// C     /    
+// 1 2 3 X
+// 4 5 6 +
+// 7 8 9 - 
+// . -0- =
