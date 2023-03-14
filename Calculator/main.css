@@ -11,7 +11,7 @@
 body {
   min-height: 100vh;
   line-height: 1.5;
-  background: linear-gradient(0.6turn, #000814, #001D3D);
+  background: linear-gradient(0.8turn, #000814, #001D3D);
 }
 
 /* Make images easier to work with */
