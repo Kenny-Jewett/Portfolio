@@ -31,6 +31,7 @@ picture {
     display: grid;
     align-content: center;
     justify-content: center;
+    height: 100vh;
     
 }
 
@@ -38,6 +39,7 @@ picture {
     padding: 1rem;
     border: solid 2px white;
     width: 50dvh;
+    min-height: 75vh;
     contain: content;
     display: grid;
     grid-template-areas:
@@ -50,46 +52,61 @@ picture {
 .container__screen {   
     padding: .3rem;
     grid-area: screen;
-    border: solid 2px skyblue;        
+    border: solid 2px skyblue;
+    height: 10vh;        
 }
 
 .screen {    
     width: 100%;
+    min-height: 100%;
     background-color: black;
     color: white;  
-    text-align: right;    
+    text-align: right;  
+    font-size: 3rem;  
 }
 
 .container__buttons {
     grid-area: buttons;
-
-    min-height: 75%;
+    padding: .3rem;
+    min-height: 75vh;
     align-self: end;
     border: solid 2px hotpink;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;    
-    grid-gap: .3rem;
+    grid-gap: .5rem;
     align-items: center;
 
 }
 
+
+
 .button__cards {
     border: solid 2px magenta;
+    min-height: 80%;
     display: grid;
     justify-content: center;
     align-items: center;
-    border-radius: 100%;
-    aspect-ratio: 1 / 1;
+    border-radius: 5rem;
+    
         
     i {
-        transform: scale(150%);
+        transform: scale(200%);
         color: white;
     }
 }
 
 
+.clear-button {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    
+}
 
+.zero-button {
+    grid-column: 2 / 4;
+    grid-row: 5 /6;
+}
 
 
 
