@@ -33,6 +33,7 @@ picture {
   background-color: #000814;
   padding: 1rem;
   border: solid 2px #003566;
+  border-radius: 1rem;
   width: 50vh;
   min-height: 75vh;
   display: grid;
