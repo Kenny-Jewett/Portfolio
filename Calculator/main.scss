@@ -22,7 +22,7 @@ $color-lightest: #FFD60A;
 body {
   min-height: 100vh;
   line-height: 1.5;
-  background-color: $color-darkest;
+  background: linear-gradient($color-darkest, $color-medium)
 }
 
 /* Make images easier to work with */
