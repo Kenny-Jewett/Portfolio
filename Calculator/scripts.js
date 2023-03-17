@@ -1,8 +1,11 @@
-
-
-
+const operatorButtons = document.querySelectorAll(".operator-button");
+const equalsButton = document.querySelector(".equals-button");
 const mainScreen = document.querySelector(".screen");
 const allButtons = document.querySelectorAll(".button__cards");
+let firstStatement = "";
+let secondStatement = ""; 
+let finalStatement = "";
+let operator = "";
 // const clearButton = document.querySelector("clear-button");
 
 // C     /    
@@ -12,14 +15,19 @@ const allButtons = document.querySelectorAll(".button__cards");
 // . -0- =
 
 
-// Click button, button runs function that finds the index of clicked button
-// plug index into switch case that assigns a value to the index
-// then print that value on the screen
-// change the html to event.target.value on the screen
+// change the html to event.target.innerHTML on the screen
+// take the expression on mainScreen and show the result
+// store each expression as a variable.
 
 const handlePressedButton = (event) => {
     if (event.target.innerHTML == "clear") {
-        mainScreen.value = ``;
+        mainScreen.value = "";
+        firstStatement = "";
+        secondStatement = "";
+        finalStatement = "";
+        operator = "";
+    } else if (event.target.innerHTML == "."){
+        mainScreen.value += "."; 
     } else {
         mainScreen.value += event.target.innerHTML;
     }
@@ -31,8 +39,85 @@ allButtons.forEach((pressedButton) => {
  });
 
 
+const handleOperatorButtons = () => {
+    if (firstStatement == "") {
+        firstStatement = mainScreen.value;
+        const firstStatementArray = firstStatement.split("");
+        operator = firstStatementArray.pop();
+        console.log(operator);
+        firstStatement = Number.parseFloat(firstStatement); 
+        console.log(firstStatement);
+        mainScreen.value = "";
+           
 
- // for (let index = 0; index < allButtons.length; index++) {
+    } else if (operator != "") {
+        
+    }
+    
+
+
+}
+
+
+
+
+operatorButtons.forEach((pressedButton) => {
+    pressedButton.addEventListener("click", handleOperatorButtons)
+}); 
+ 
+//  finalStatement = firstStatement+secondStatement;        
+//  mainScreen.value = finalStatement;
+
+
+
+
+const handleEqualsButton = () => {
+    secondStatement = mainScreen.value;
+    secondStatement = Number.parseFloat(secondStatement);
+        console.log(secondStatement);
+
+        
+        switch (true) {               
+                case  operator == "x":
+                    mainScreen.value = firstStatement * secondStatement;
+                    break;    
+                case  operator == "/" && secondStatement != 0:
+                    mainScreen.value = firstStatement / secondStatement;
+                    break;    
+                case  operator == "+":
+                    mainScreen.value = firstStatement + secondStatement;
+                    break;    
+                case  operator == "-":
+                    mainScreen.value = firstStatement - secondStatement;
+                    break;    
+                case  operator == "/" && secondStatement == 0 :
+                    mainScreen.value = "error"
+                    break;    
+                default:
+                    break;
+    }
+    // mainScreen.value = firstStatement - secondStatement ;   
+}
+
+
+//Try using .innerText instead of .innerHTML
+// .innText returns the text of the element plus all of it's children.
+equalsButton.addEventListener("click", handleEqualsButton);
+
+
+
+
+
+// const handleEqualsButton = (screenEquals) => {
+
+
+// }
+
+// equalsButton.addEventListener("click", handleEqualsButton);
+
+
+
+// for (let index = 0; index < allButtons.length; index++) {
 //     allButtons[index].addEventListener("click", handlePressedButton);
     
 // }

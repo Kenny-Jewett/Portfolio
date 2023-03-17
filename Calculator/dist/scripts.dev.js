@@ -1,20 +1,31 @@
 "use strict";
 
+var operatorButtons = document.querySelectorAll(".operator-button");
+var equalsButton = document.querySelector(".equals-button");
 var mainScreen = document.querySelector(".screen");
-var allButtons = document.querySelectorAll(".button__cards"); // const clearButton = document.querySelector("clear-button");
+var allButtons = document.querySelectorAll(".button__cards");
+var firstStatement = "";
+var secondStatement = "";
+var finalStatement = "";
+var operator = ""; // const clearButton = document.querySelector("clear-button");
 // C     /    
 // 1 2 3 X
 // 4 5 6 +
 // 7 8 9 - 
 // . -0- =
-// Click button, button runs function that finds the index of clicked button
-// plug index into switch case that assigns a value to the index
-// then print that value on the screen
-// change the html to event.target.value on the screen
+// change the html to event.target.innerHTML on the screen
+// take the expression on mainScreen and show the result
+// store each expression as a variable.
 
 var handlePressedButton = function handlePressedButton(event) {
   if (event.target.innerHTML == "clear") {
     mainScreen.value = "";
+    firstStatement = "";
+    secondStatement = "";
+    finalStatement = "";
+    operator = "";
+  } else if (event.target.innerHTML == ".") {
+    mainScreen.value += ".";
   } else {
     mainScreen.value += event.target.innerHTML;
   } // alert("you pressed" + event.target.innerHTML);
@@ -23,7 +34,63 @@ var handlePressedButton = function handlePressedButton(event) {
 
 allButtons.forEach(function (pressedButton) {
   pressedButton.addEventListener("click", handlePressedButton);
-}); // for (let index = 0; index < allButtons.length; index++) {
+});
+
+var handleOperatorButtons = function handleOperatorButtons() {
+  if (firstStatement == "") {
+    firstStatement = mainScreen.value;
+    var firstStatementArray = firstStatement.split("");
+    operator = firstStatementArray.pop();
+    console.log(operator);
+    firstStatement = Number.parseFloat(firstStatement);
+    console.log(firstStatement);
+    mainScreen.value = "";
+  } else if (operator != "") {}
+};
+
+operatorButtons.forEach(function (pressedButton) {
+  pressedButton.addEventListener("click", handleOperatorButtons);
+}); //  finalStatement = firstStatement+secondStatement;        
+//  mainScreen.value = finalStatement;
+
+var handleEqualsButton = function handleEqualsButton() {
+  secondStatement = mainScreen.value;
+  secondStatement = Number.parseFloat(secondStatement);
+  console.log(secondStatement);
+
+  switch (true) {
+    case operator == "x":
+      mainScreen.value = firstStatement * secondStatement;
+      break;
+
+    case operator == "/" && secondStatement != 0:
+      mainScreen.value = firstStatement / secondStatement;
+      break;
+
+    case operator == "+":
+      mainScreen.value = firstStatement + secondStatement;
+      break;
+
+    case operator == "-":
+      mainScreen.value = firstStatement - secondStatement;
+      break;
+
+    case operator == "/" && secondStatement == 0:
+      mainScreen.value = "error";
+      break;
+
+    default:
+      break;
+  } // mainScreen.value = firstStatement - secondStatement ;   
+
+}; //Try using .innerText instead of .innerHTML
+// .innText returns the text of the element plus all of it's children.
+
+
+equalsButton.addEventListener("click", handleEqualsButton); // const handleEqualsButton = (screenEquals) => {
+// }
+// equalsButton.addEventListener("click", handleEqualsButton);
+// for (let index = 0; index < allButtons.length; index++) {
 //     allButtons[index].addEventListener("click", handlePressedButton);
 // }
 // clearButton.addEventListener("click", () => mainScreen.value = ``);
