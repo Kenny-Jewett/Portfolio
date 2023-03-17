@@ -51,11 +51,8 @@ const handleOperatorButtons = () => {
            
 
     } else if (operator != "") {
-        
+        mainScreen.value = "error";
     }
-    
-
-
 }
 
 

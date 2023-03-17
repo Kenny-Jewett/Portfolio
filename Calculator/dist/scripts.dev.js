@@ -45,7 +45,9 @@ var handleOperatorButtons = function handleOperatorButtons() {
     firstStatement = Number.parseFloat(firstStatement);
     console.log(firstStatement);
     mainScreen.value = "";
-  } else if (operator != "") {}
+  } else if (operator != "") {
+    mainScreen.value = "error";
+  }
 };
 
 operatorButtons.forEach(function (pressedButton) {
