@@ -79,7 +79,7 @@ const handleEqualsButton = () => {
         
         switch (true) {               
                 case  operator == "x":
-                    mainScreen.value = firstStatement * secondStatement;
+                    mainScreen.value = firstStatement * secondStatement;                    
                     break;    
                 case  operator == "/" && secondStatement != 0:
                     mainScreen.value = firstStatement / secondStatement;

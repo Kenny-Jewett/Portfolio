@@ -9,7 +9,7 @@
 
 /* Set core body defaults */
 body {
-  height: 100dvh;
+  height: 100vh;
   line-height: 1.5;
   background-color: #000814;
 }
@@ -84,9 +84,56 @@ picture {
   border-radius: 5rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
 }
+.button__cards i::before {
+  visibility: visible;
+}
 .button__cards i {
   transform: scale(200%);
   color: #FFC300;
+  visibility: hidden;
+  padding-left: 0.8rem;
+}
+
+.button__cards:active {
+  opacity: 50%;
+}
+
+#divide__icon {
+  padding-right: 0.4rem;
+}
+
+#multiply__icon {
+  padding-left: 0.9rem;
+}
+
+#minus__icon {
+  padding-right: 0.3rem;
+}
+
+#plus__icon {
+  padding-left: 1.1rem;
+}
+
+#equals__icon {
+  padding-right: 0.7rem;
+}
+
+#operator__icons {
+  align-items: center;
+}
+
+#decimal {
+  visibility: visible;
+  padding-right: 0.7rem;
+}
+
+#clear::before {
+  visibility: hidden;
+}
+
+#clear {
+  padding-right: 1.8rem;
+  visibility: visible;
 }
 
 .clear-button {

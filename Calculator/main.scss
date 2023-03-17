@@ -20,7 +20,7 @@ $color-lightest: #FFD60A;
 
 /* Set core body defaults */
 body {
-  height: 100dvh;
+  height: 100vh;
   line-height: 1.5;
   background-color: $color-darkest;
     
@@ -106,12 +106,64 @@ picture {
     border-radius: 5rem;
     box-shadow: 0 .5rem 1rem rgb(0 0 0 / .4);
     
+    i::before {
+        visibility: visible;  
         
+    }
+
+    
     i {
         transform: scale(200%);
-        color: $color-light;
+        color: $color-light;        
+        visibility: hidden;
+        padding-left: .8rem ;        
     }
 }
+
+.button__cards:active {
+    opacity: 50%;
+    
+}
+
+#divide__icon {
+    padding-right: .4rem;
+}
+
+#multiply__icon {
+    padding-left: .9rem;
+}
+#minus__icon{
+    padding-right: .3rem;
+}
+
+#plus__icon {
+    padding-left: 1.1rem;
+}
+
+#equals__icon {
+    padding-right: .7rem;
+}
+
+#operator__icons {
+   
+    align-items: center;
+}
+
+#decimal {
+    visibility: visible;
+    padding-right: .7rem;
+}
+
+#clear::before {
+    visibility: hidden;
+}
+
+#clear {
+    padding-right: 1.8rem;
+    visibility: visible;
+}
+
+
 
 
 .clear-button {
