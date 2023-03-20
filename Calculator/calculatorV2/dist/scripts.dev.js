@@ -10,7 +10,7 @@ var finalStatement = "";
 var operator = "";
 
 var handlePressedButton = function handlePressedButton(event) {
-  if (event.target.innerHTML == "Clear") {
+  if (event.target.innerHTML == "CLEAR") {
     mainScreen.value = "";
     firstStatement = "";
     secondStatement = "";

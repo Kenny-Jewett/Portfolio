@@ -17,8 +17,7 @@ $color-lightest: #FFD60A;
 }
   
 body {
-    background: rgb(0,8,20);
-    background: radial-gradient(circle, $color-darkest 0%, $color-darkest 19%, $color-dark 90%, $color-dark 17%);
+    background: radial-gradient(circle, $color-darkest 19%, $color-dark 90%, $color-dark 17%);
     min-height: 100vh;    
   }
 
@@ -86,6 +85,8 @@ select {
     
 }
 
+
+
 .button__cards {
      
     display: grid;
@@ -94,7 +95,7 @@ select {
     border: transparent 2px;
     border-radius: 5rem;
     box-shadow: 0 .5rem 1rem rgb(0 0 0 / .4);
-
+    
     button {       
         border: solid 2px $color-darkest;
         background-color: $color-dark;
@@ -102,6 +103,8 @@ select {
         color: $color-light;      
         align-items: center;
         justify-content: center;
+        transition: .3s;
+        
         
 
         span {
@@ -111,6 +114,10 @@ select {
             
         }
     }
+}
+
+.button__cards:hover button{
+    transform: scale(110%);
 }
 
 .button__cards:active {

@@ -8,8 +8,7 @@
 }
 
 body {
-  background: #000814;
-  background: radial-gradient(circle, #000814 0%, #000814 19%, #001D3D 90%, #001D3D 17%);
+  background: radial-gradient(circle, #000814 19%, #001D3D 90%, #001D3D 17%);
   min-height: 100vh;
 }
 
@@ -89,11 +88,16 @@ select {
   color: #FFC300;
   align-items: center;
   justify-content: center;
+  transition: 0.3s;
 }
 .button__cards button span {
   display: block;
   font-size: 3em;
   font-weight: bold;
+}
+
+.button__cards:hover button {
+  transform: scale(110%);
 }
 
 .button__cards:active {
