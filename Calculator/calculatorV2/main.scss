@@ -46,6 +46,7 @@ select {
 
 .body__container {
     background-color: $color-darkest; 
+    border-radius: 1rem;
     display: grid;
     grid-template-areas: 
         "screen"
@@ -119,6 +120,33 @@ select {
 .button__cards:active {
     opacity: 50%;
 }
+
+.operator__buttons {
+    
+    button{
+        background-color: $color-darkest;
+        border-color: $color-lightest;
+
+        span{
+            color: $color-lightest;
+
+        }
+    }
+    
+
+}
+
+.equals__button {
+
+    button {
+        background-color: $color-light;
+        
+        span{
+            color: $color-dark;
+        }
+    }
+}
+
 
 .clear__button {
     grid-column: 1 / 4;

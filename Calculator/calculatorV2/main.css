@@ -35,6 +35,7 @@ select {
 
 .body__container {
   background-color: #000814;
+  border-radius: 1rem;
   display: grid;
   grid-template-areas: "screen" "buttons";
   grid-gap: 0.5rem;
@@ -98,6 +99,21 @@ select {
 
 .button__cards:active {
   opacity: 50%;
+}
+
+.operator__buttons button {
+  background-color: #000814;
+  border-color: #FFD60A;
+}
+.operator__buttons button span {
+  color: #FFD60A;
+}
+
+.equals__button button {
+  background-color: #FFC300;
+}
+.equals__button button span {
+  color: #001D3D;
 }
 
 .clear__button {
