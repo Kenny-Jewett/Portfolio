@@ -88,7 +88,6 @@ select {
   color: #FFC300;
   align-items: center;
   justify-content: center;
-  transition: 0.3s;
 }
 .button__cards button span {
   display: block;
@@ -96,10 +95,38 @@ select {
   font-weight: bold;
 }
 
-.button__cards:hover button {
-  transform: scale(110%);
+.button__cards:hover > * {
+  transform: scale(120%);
 }
 
+.container__buttons {
+  animation: moving-buttons 800ms cubic-bezier(0.51, 3.24, 0.42, -0.62) forwards;
+}
+
+.operator__buttons {
+  animation: moving-buttons 700ms cubic-bezier(0.33, 0.01, 0.33, 2.42) forwards;
+}
+
+.clear__button {
+  animation: moving-buttons 800ms cubic-bezier(0.33, 0.01, 0.33, 2.42) forwards;
+}
+
+.zero__button {
+  animation: moving-buttons 700ms cubic-bezier(0.33, 0.01, 0.33, 2.42) forwards;
+}
+
+.equals__button {
+  animation: moving-buttons 900ms cubic-bezier(0, 0.98, 0.78, 1.89) forwards;
+}
+
+@keyframes moving-buttons {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX();
+  }
+}
 .button__cards:active {
   opacity: 50%;
 }
