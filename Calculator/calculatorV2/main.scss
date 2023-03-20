@@ -1,3 +1,11 @@
+
+$color-darkest: #000814;
+$color-dark: #001D3D;
+$color-medium: #003566;
+$color-light: #FFC300;
+$color-lightest: #FFD60A;
+
+
 *,
 *::before,
 *::after {
@@ -5,11 +13,9 @@
   margin: 0;
 }
 
-html:focus-within {
-    scroll-behavior: smooth;
-  }
   
   body {
+    background: linear-gradient(.8turn, $color-darkest, $color-dark);
     min-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
@@ -27,3 +33,100 @@ textarea,
 select {
   font: inherit;
 }
+
+
+
+.main__container {    
+    display: grid;    
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    padding: 1rem;
+}
+
+.body__container {
+    background-color: $color-darkest; 
+    display: grid;
+    grid-template-areas: 
+        "screen"
+        "buttons";
+    grid-gap: .5rem;
+    contain: content;
+    max-width: 30rem;
+    min-height: 75dvh;
+    padding: 1rem;
+    box-shadow: 0 .5rem 1rem rgb(0 0 0 / .4);
+}
+
+.container__screen {    
+    padding: .3rem;
+    grid-area: screen;
+    height: 10dvh;
+}
+
+.main__screen {    
+    background-color: $color-darkest;
+    color: $color-lightest;
+    text-align: right;
+    font-size: 4rem;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 .5rem 1rem rgb(0 0 0 / .4);
+}
+
+.container__buttons {    
+    grid-area: buttons;
+    min-height: 70vh;    
+    align-self: end;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: .5rem
+    
+}
+
+.button__cards {
+     
+    display: grid;
+    height: 10vh;       
+    contain: content;
+    border: transparent 2px;
+    border-radius: 5rem;
+    box-shadow: 0 .5rem 1rem rgb(0 0 0 / .4);
+
+    button {
+        height: 100%;
+        min-width: 100%;
+        border: solid 2px $color-darkest;
+        background-color: $color-dark;
+        border-radius: 5rem;       
+        color: $color-light;      
+        align-items: center;
+        justify-content: center;
+        
+
+        span {
+            font-size: 3em;
+            font-weight: bold; 
+            contain: layout;    
+            
+
+        }
+    }
+}
+
+.button__cards:active {
+    opacity: 50%;
+}
+
+.clear__button {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+
+.zero__button {
+    grid-column: 2 / 4;
+    grid-row: 5 / 6;
+}
+
