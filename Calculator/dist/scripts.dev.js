@@ -52,8 +52,7 @@ var handleOperatorButtons = function handleOperatorButtons() {
 
 operatorButtons.forEach(function (pressedButton) {
   pressedButton.addEventListener("click", handleOperatorButtons);
-}); //  finalStatement = firstStatement+secondStatement;        
-//  mainScreen.value = finalStatement;
+});
 
 var handleEqualsButton = function handleEqualsButton() {
   secondStatement = mainScreen.value;
@@ -85,39 +84,6 @@ var handleEqualsButton = function handleEqualsButton() {
       break;
   } // mainScreen.value = firstStatement - secondStatement ;   
 
-}; //Try using .innerText instead of .innerHTML
-// .innText returns the text of the element plus all of it's children.
+};
 
-
-equalsButton.addEventListener("click", handleEqualsButton); // const handleEqualsButton = (screenEquals) => {
-// }
-// equalsButton.addEventListener("click", handleEqualsButton);
-// for (let index = 0; index < allButtons.length; index++) {
-//     allButtons[index].addEventListener("click", handlePressedButton);
-// }
-// clearButton.addEventListener("click", () => mainScreen.value = ``);
-// const findButtonIndex = (buttonIdex) => {
-//     console.log(buttonIdex);
-// }
-// allButtons.addEventListener("click", findButtonIndex);
-// const handleButtonPress = (event) => {
-//     console.log("clear button");    
-// }
-// clearButton.addEventListener("click", handleButtonPress);
-// const clearButton = document.querySelector(".clear-button");
-// const divideButton = document.querySelector(".divide-button");
-// const oneButton = document.querySelector(".one-button");
-// const twoButton = document.querySelector(".two-button");
-// const threeButton = document.querySelector(".three-button");
-// const multiplyButton = document.querySelector(".multiply-button");
-// const fourButton = document.querySelector(".four-button");
-// const fiveButton = document.querySelector(".five-button");
-// const sixButton = document.querySelector(".six-button");
-// const additionButton = document.querySelector(".addition-button");
-// const sevenButton = document.querySelector(".seven-button");
-// const eightButton = document.querySelector(".eight-button");
-// const nineButton = document.querySelector(".nine-button");
-// const minusButton = document.querySelector(".minus-button");
-// const decimalButton = document.querySelector(".decimal-button");
-// const equalsButton = document.querySelector(".equals-button");
-// const zeroButton = document.querySelector(".zero-button");
+equalsButton.addEventListener("click", handleEqualsButton);
