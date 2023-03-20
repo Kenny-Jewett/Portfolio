@@ -8,10 +8,9 @@
 }
 
 body {
-  background: linear-gradient(0.8turn, #000814, #001D3D);
+  background: #000814;
+  background: radial-gradient(circle, #000814 0%, #000814 19%, #001D3D 90%, #001D3D 17%);
   min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
 }
 
 img,

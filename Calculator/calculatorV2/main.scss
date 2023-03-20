@@ -15,15 +15,11 @@ $color-lightest: #FFD60A;
   margin: 0;
   font-family: $font;
 }
-
-
-
   
 body {
-    background: linear-gradient(.8turn, $color-darkest, $color-dark);
-    min-height: 100vh;
-    text-rendering: optimizeSpeed;
-    line-height: 1.5;
+    background: rgb(0,8,20);
+    background: radial-gradient(circle, $color-darkest 0%, $color-darkest 19%, $color-dark 90%, $color-dark 17%);
+    min-height: 100vh;    
   }
 
   img,
@@ -38,8 +34,6 @@ textarea,
 select {
   font: inherit;
 }
-
-
 
 .main__container {    
     display: grid;    
@@ -147,7 +141,6 @@ select {
         }
     }
 }
-
 
 .clear__button {
     grid-column: 1 / 4;
