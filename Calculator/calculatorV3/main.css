@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Sono:wght@700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Sono";
+}
+
+body {
+  background: radial-gradient(circle, #000814 19%, #001D3D 90%, #001D3D 17%);
+  min-height: 100vh;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.main__container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+  padding: 1rem;
+}
+
+.body__container {
+  background-color: #000814;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-areas: "screen" "buttons";
+  grid-gap: 0.5rem;
+  contain: content;
+  max-width: 30rem;
+  min-height: 75dvh;
+  padding: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+}
+
+.container__screen {
+  padding: 0.3rem;
+  grid-area: screen;
+  height: 10dvh;
+}
+
+.main__screen {
+  background-color: #000814;
+  color: #FFD60A;
+  text-align: right;
+  font-size: 4rem;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+}
+
+.container__buttons {
+  grid-area: buttons;
+  min-height: 70vh;
+  align-self: end;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.button__cards {
+  display: grid;
+  height: 12vh;
+  contain: content;
+  border: transparent 2px;
+  border-radius: 5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+}
+.button__cards button {
+  transition: 300ms ease-in-out;
+  border: solid 2px #000814;
+  background-color: #001D3D;
+  border-radius: 5rem;
+  color: #FFC300;
+  align-items: center;
+  justify-content: center;
+}
+.button__cards button span {
+  display: block;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.button__cards:hover > * {
+  transform: scale(120%);
+}
+
+.clear__button {
+  animation: moving-buttons 875ms cubic-bezier(0.89, 0.15, 0.84, 1.37) forwards;
+}
+
+.slash__button {
+  animation: moving-buttons 100ms cubic-bezier(0.89, 0.15, 0.84, 1.37) forwards;
+}
+
+.one__button {
+  animation: moving-buttons 850ms cubic-bezier(0.89, 0.15, 0.84, 1.37) forwards;
+}
+
+.two__button {
+  animation: moving-buttons 700ms cubic-bezier(0.89, 0.15, 0.84, 1.37) forwards;
+}
+
+.three__button {
+  animation: moving-buttons 500ms cubic-bezier(0.89, 0.15, 0.84, 1.37) forwards;
+}
+
+.x__button {
+  animation: moving-buttons 250ms cubic-bezier(0.89, 0.15, 0.84, 1.37) forwards;
+}
+
+.four__button {
+  animation: moving-buttons 950ms cubic-bezier(0.89, 0.15, 0.84, 1.37) forwards;
+}
+
+.five__button {
+  animation: moving-buttons 750ms cubic-bezier(0.89, 0.15, 0.84, 1.37) forwards;
+}
+
+.six__button {
+  animation: moving-buttons 575ms cubic-bezier(0.89, 0.15, 0.84, 1.37) forwards;
+}
+
+.plus__button {
+  animation: moving-buttons 350ms cubic-bezier(0.89, 0.15, 0.84, 1.37) forwards;
+}
+
+.seven__button {
+  animation: moving-buttons 1050ms cubic-bezier(0.89, 0.15, 0.84, 1.37) forwards;
+}
+
+.eight__button {
+  animation: moving-buttons 800ms cubic-bezier(0.89, 0.15, 0.84, 1.37) forwards;
+}
+
+.nine__button {
+  animation: moving-buttons 650ms cubic-bezier(0.89, 0.15, 0.84, 1.37) forwards;
+}
+
+.minus__button {
+  animation: moving-buttons 450ms cubic-bezier(0.89, 0.15, 0.84, 1.37) forwards;
+}
+
+.decimal__button {
+  animation: moving-buttons 1200ms cubic-bezier(0.89, 0.15, 0.84, 1.37) forwards;
+}
+
+.equals__button {
+  animation: moving-buttons 525ms cubic-bezier(0.89, 0.15, 0.84, 1.37) forwards;
+}
+
+.zero__button {
+  animation: moving-buttons 825ms cubic-bezier(0.89, 0.15, 0.84, 1.37) forwards;
+}
+
+@keyframes moving-buttons {
+  0% {
+    transform: translateX(-500%);
+  }
+  100% {
+    transform: translateX();
+  }
+}
+.button__cards:active {
+  opacity: 50%;
+}
+
+.operator__buttons button {
+  background-color: #000814;
+  border-color: #FFD60A;
+}
+.operator__buttons button span {
+  color: #FFD60A;
+}
+
+.equals__button button {
+  background-color: #FFC300;
+}
+.equals__button button span {
+  color: #001D3D;
+}
+
+.clear__button {
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+
+.zero__button {
+  grid-column: 2/4;
+  grid-row: 5/6;
+}
